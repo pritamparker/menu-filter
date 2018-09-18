@@ -1,0 +1,9 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-3" *ngFor="let item of selectedItems">
+      <div class="card" style="margin-top:10px;padding:10px">
+        <p><span><img src="{{item.src}}" style="width:50px"> </span>{{item.name}} </p>
+      </div>
+    </div>
+  </div>
+</div>
