@@ -8,6 +8,9 @@ import { DataService } from '../../_services/data.service';
 })
 export class HeaderComponent implements OnInit {
   showPanel: string = 'show';
+  showMenu: string = '';
+  showTopMenu: string = '';
+  show: boolean = false;
   hideAll: boolean = true;
   message: number;
   menuItems: any[] = [
@@ -36,19 +39,31 @@ export class HeaderComponent implements OnInit {
     this.__dataService.currentMessage.subscribe(message => this.message = message)
   }
   expandProfile(id) {
-    this.hideAll = true;
+    console.log(id)
+    this.showTopMenu = 'show';
     this.menuItems.forEach(item => {
       this[this.showPanel + item.id] = false;
     })
-    this[this.showPanel + id] = true
+    this[this.showPanel + id] = true;
+    setTimeout(() => {
+      this.hideAll = true;
+    }, 0)
   }
   selectSubCategory(id) {
     this.__dataService.changeMessage(id)
   }
   close($event) {
-    console.log("event", $event)
     if ($event == null) {
       this.hideAll = false;
     }
   }
+  opneMenu() {
+    this.show = !this.show;
+    if (this.show) {
+      this.showMenu = 'show';
+    } else {
+      this.showMenu = 'hide';
+    }
+  }
+
 }

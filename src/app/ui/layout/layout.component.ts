@@ -35,7 +35,6 @@ export class LayoutComponent implements OnInit {
     this.__dataService.currentMessage.subscribe(message => { this.message = message })
   }
   ngDoCheck() {
-    console.log("parent se", this.message);
     if (this.message) {
       this.selectedItems = this.items.filter(item => {
         return item.id == this.message

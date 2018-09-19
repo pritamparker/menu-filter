@@ -10,7 +10,6 @@ export class DataService {
     constructor() { }
 
     changeMessage(message: number) {
-        console.log("num", message)
         this.messageSource.next(message)
     }
 
