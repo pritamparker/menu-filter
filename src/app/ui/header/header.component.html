@@ -9,7 +9,7 @@
     <ul class="navbar-nav mr-auto">
       <li class="nav-item dropdown {{showTopMenu}}" *ngFor="let item of menuItems" (mouseover)="expandProfile(item?.id)"
         (clickOutside)="close($event)" routerLinkActive="active">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+        <a class="nav-link dropdown-toggle box" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
           aria-haspopup="true" aria-expanded="false">
           {{item.mainCategory}}
         </a>

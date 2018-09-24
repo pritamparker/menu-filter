@@ -22,9 +22,13 @@ export class LayoutComponent implements OnInit {
       { 'id': 12, 'name': 'Create Employees', 'src': "../../assets/watches.png" },
       { 'id': 13, 'name': 'Edit/Maintain Employees', 'src': "../../assets/kitchen.png" },
       { 'id': 21, 'name': 'Make Same Day Time', 'src': "../../assets/hotel.png" },
+      { 'id': 13, 'name': 'Edit/Maintain Employees', 'src': "../../assets/kitchen.png" },
       { 'id': 32, 'name': 'Close Labor Weeks', 'src': "../../assets/passenger_carrier.png" },
       { 'id': 13, 'name': 'Print,Publish & Post', 'src': "../../assets/home_decor.png" },
-      { 'id': 33, 'name': 'Create/Edit Schedules', 'src': "../../assets/house_helps.png" }
+      { 'id': 11, 'name': 'Booking Journal', 'src': "../../assets/van.png" },
+      { 'id': 33, 'name': 'Create/Edit Schedules', 'src': "../../assets/house_helps.png" },
+      { 'id': 31, 'name': 'Projected Overtime.', 'src': "../../assets/travel.png" },
+      { 'id': 12, 'name': 'Create Employees', 'src': "../../assets/watches.png" },
     ]
   selectedItems: any[];
   message: number;

@@ -29,6 +29,19 @@ export class HeaderComponent implements OnInit {
     },
     {
       'id': 4,
+      'mainCategory': 'Color',
+      'subCategory': [{ 'id': 11, 'name': 'Cash Management' }, { 'id': 12, 'name': 'Labor Management' }, { 'id': 13, 'name': 'Inventory Management' }]
+    }, {
+      'id': 5,
+      'mainCategory': 'Price',
+      'subCategory': [{ 'id': 21, 'name': 'Tasks' }, { 'id': 22, 'name': 'Reports' }, { 'id': 23, 'name': 'Setup & Config' }]
+    }, {
+      'id': 6,
+      'mainCategory': 'Rate',
+      'subCategory': [{ 'id': 31, 'name': 'Daily' }, { 'id': 32, 'name': 'Weekly' }, { 'id': 33, 'name': 'Monthly' }]
+    },
+    {
+      'id': 7,
       'mainCategory': 'All',
       'subCategory': [{ 'id': null, 'name': 'All Show' }]
     }

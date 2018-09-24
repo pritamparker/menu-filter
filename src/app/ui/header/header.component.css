@@ -1,0 +1,9 @@
+.box {
+  border: 1px solid #E6EAEA;
+  width: 160px;
+  text-align: center;
+}
+
+.activeWhite {
+  background: red;
+}
